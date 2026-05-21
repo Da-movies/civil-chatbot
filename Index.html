@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivilEng Pro | IS Code AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo"><i class="fa-solid fa-helmet-safety"></i> CivilEng<span>Pro</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#steel">Steel</a></li>
+                    <li><a href="#concrete">Concrete</a></li>
+                    <li><a href="#formwork">Formwork</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Professional Civil Engineering Hub</h1>
+            <p>Resolve structural execution and design doubts instantly using Indian Standard (IS) Guidelines.</p>
+            <div class="code-badges">
+                <span><i class="fa-solid fa-book"></i> IS 456:2000</span>
+                <span><i class="fa-solid fa-book"></i> IS 800:2007</span>
+                <span><i class="fa-solid fa-book"></i> IS 14687</span>
+            </div>
+        </section>
+
+        <section class="topics-grid">
+            <div class="topic-card" id="steel">
+                <i class="fa-solid fa-bars-staggered icon"></i>
+                <h3>Steel Reinforcement</h3>
+                <p>Lap lengths, clear covers, development length, and anchorage profiles matching IS 456 and IS 800 standards.</p>
+            </div>
+            <div class="topic-card" id="concrete">
+                <i class="fa-solid fa-cubes icon"></i>
+                <h3>Concrete Technology</h3>
+                <p>Mix design proportioning, durability requirements, curing timelines, and characteristic strength criteria.</p>
+            </div>
+            <div class="topic-card" id="formwork">
+                <i class="fa-solid fa-border-all icon"></i>
+                <h3>Formwork & Shuttering</h3>
+                <p>Stripping time profiles, lateral pressure estimates, and tolerance alignments under IS 456 & IS 14687.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <div class="chat-status">
+                <i class="fa-solid fa-robot"></i>
+                <div>
+                    <h4>IS Code AI Assistant</h4>
+                    <span class="status-online">System Ready</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-msg">
+                <p>Welcome, Engineer. Ask me any practical or compliance questions regarding Steel, Concrete, or Formwork. Answers are framed strictly according to relevant Indian Standard Codes.</p>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="e.g., Stripping time for beam soffits?">
+            <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
